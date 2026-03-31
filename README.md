@@ -155,6 +155,21 @@ POST `/api/auth/reset-password/:token`
 
 ---
 
+## 📧 Email Functionality (Note)
+
+The password reset email feature was successfully implemented and tested in the local environment using Nodemailer.
+
+Below is a sample screenshot of the email received:
+
+![Password Reset Email](./assets/email-proof.png)
+
+### 🔧 Deployment Note
+For easier testing during evaluation, the reset link is also returned directly in the API response. This avoids dependency on email services and ensures smooth testing.
+
+However, the email functionality is fully implemented and can be re-enabled in production environments.
+
+---
+
 ## 👨‍💻 Author
 
 **Nithiswar B**
