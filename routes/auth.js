@@ -53,7 +53,7 @@ router.post("/forgot-password", async (req, res) => {
 
     await user.save();
 
-    const link = `http://localhost:3000/reset-password/${token}`;
+ const link = `${process.env.FRONTEND_URL}/reset-password/${token}`;
 
     // OPTIONAL EMAIL (can fail if not configured)
     try {
