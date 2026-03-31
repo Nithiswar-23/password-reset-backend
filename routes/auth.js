@@ -57,7 +57,7 @@ router.post("/forgot-password", async (req, res) => {
 
     // OPTIONAL EMAIL (can fail if not configured)
     try {
-      await sendEmail(email, link);
+      console.log("Reset Link:", link);
     } catch (err) {
       console.log("Email not sent (ok for testing)");
     }
